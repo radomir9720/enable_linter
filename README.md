@@ -1,4 +1,4 @@
-# Enable Lints Site #
+# Setup Lints Site #
 
 The purpose of this site is to easy and quickly recommended to a <Code>Dart/Flutter</Code> developer to use [Linter](https://dart.dev/tools/linter-rules).
 
