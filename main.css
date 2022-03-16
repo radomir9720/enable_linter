@@ -1,0 +1,36 @@
+article {
+    font-size: 20px;
+    flex: 1;
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.center-of-screen {
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: auto;
+    max-width: 850px;
+    min-width: 400px;
+}
+
+footer {
+    height: 50px;
+    background-color: paleturquoise;
+}
+
+.footer-wrapper {
+    display: table;
+    height: 100%;
+}
+
+.footer-content {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
