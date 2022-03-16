@@ -16,44 +16,40 @@
 	<link rel="stylesheet" href="assets/styles/atom-one-light.min.css">
 	<script src="assets/highlight.min.js"></script>
 	<script>hljs.highlightAll();</script>
+
+
 </head>
 
-<body>
+<body class="translate" style="display:none;">
 	<article class="center-of-screen">
 		<div style="height: 35px;"></div>
 
-		<h1 id="title">Ради всего святого, подключи <a target="_blank" href="https://dart.dev/tools/linter-rules"
-				title="Используйте линтер Dart для выявления возможных проблем в вашем коде Dart.">линтер</a>!</h1>
-
-
-		<div style="height: 16px;"></div>
-
-		<span>Линтер это инструмент, который предназначен для соблюдения стиля кодирования.</span>
+		<h1>{{titlePart}}<a target="_blank" title="{{linterTooltip}}"
+				href="https://dart.dev/tools/linter-rules">{{linter}}</a>!
+		</h1>
 
 		<div style="height: 16px;"></div>
 
-		<div>В новых <code>flutter</code> проектах по умолчанию уже подключены <code>flutter_lints</code>, но
-			стандартные правила из данного пакета не настолько строгие.
-		</div>
+		<span>{{linterDefinition}}</span>
+
+		<div style="height: 16px;"></div>
+
+		<div>{{aboutFlutterLints}}</div>
 
 		<div style="height: 16px;"></div>
 
 		<details>
-			<summary>Для чего нужны строгие правила?</summary>
+			<summary>{{purposeOfStrictLints}}</summary>
 
 			<ul>
-				<li>Новичок, по незнанию, может написать плохой код. Линтер подскажет как делать можно, а как лучше не
-					стоит.
-				</li>
-				<li>Любой разработчик может забыть что-то(например дописать ключевое слово <code>const</code>). Линтер
-					об
-					этом напомнит.</li>
+				<li>{{newbiePurposeCase}}</li>
+				<li>{{forgetfulness}}</li>
 			</ul>
 		</details>
 
 		<div style="height: 25px;"></div>
 
-		<span><b>Рекомендуемые пакеты с более строгими правилами:</b></span>
+		<span><b>{{recommendedPackages}}</b></span>
 
 		<ul>
 			<li><a target="_blank" href="https://pub.dev/packages/surf_lint_rules">surf_lint_rules</a></li>
@@ -63,7 +59,7 @@
 		</ul>
 
 		<div>
-			<p>Не забудь исключить из правил линтера ненужные или сгенерированные файлы. Пример:</p>
+			<p>{{excludeFromLinter}}</p>
 
 			<pre><code class="language-yaml">analyzer:
   exclude:
@@ -83,16 +79,19 @@
 		<div class="center-of-screen footer-wrapper">
 			<div class="footer-content">
 				<!-- Open in github -->
-				<span>Открыть <a target="_blank"
-						href="https://github.com/radomir9720/enable_linter">github</a></span>
+				<span>{{open}} <a target="_blank" href="https://github.com/radomir9720/enable_linter">github</a></span>
 				<!-- Github logo -->
 				<a target="_blank" href="https://github.com/radomir9720/enable_linter"><img
 						src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
-						alt="alt"></a>
+						alt="github repo"></a>
 			</div>
 		</div>
 	</footer>
 
 </body>
+
+
+<script src="localizations.js"></script>
+<script>localize('flex');</script>
 
 </html>
